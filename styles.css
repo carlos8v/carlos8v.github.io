@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body, #wrapper {
+body, .wrapper {
     width: 100%;
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
@@ -13,11 +13,11 @@ body, #wrapper {
     z-index: 0;
 }
 
-#wrapper {
+.wrapper {
     position: relative;
 }
 
-#background {
+.background {
     position: absolute;
     width: 100%;
     height: 60%;
@@ -27,7 +27,7 @@ body, #wrapper {
     background: url('https://img.wallpapersafari.com/desktop/1680/1050/81/53/deAaGq.jpg') center center / cover no-repeat;
 }
 
-#container {
+.container {
     width: 100%;
     height: 720px;
     display: flex;
@@ -35,7 +35,7 @@ body, #wrapper {
     justify-content: center;
 }
 
-#main-content {
+.main-content {
     width: 90%;
     max-width: 1920px;
     height: 80%;
@@ -51,42 +51,42 @@ body, #wrapper {
     grid-template-rows: 1fr 120px;
 }
 
-#image {
+.image {
     height: 100%;
     overflow: hidden;
     border-radius: 4px;
     padding: 30px 0 0 30px;
 }
 
-#image img {
+.image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 4px;
 }
 
-#info {
+.info {
     display: flex;
     flex-direction: column;
     padding: 30px 30px 0 0;
 }
 
-#info-name {
+.info-name {
     border-bottom: 1px solid rgba(0,0,0,0.1);
     padding: 15px 0 20px 0;
     margin-bottom: 30px;
 }
 
-#info-name p {
+.info-name p {
     font-size: 28px;
     margin-bottom: 10px;
 }
 
-#info-name p strong {
+.info-name p strong {
     color: #0fa36b;
 }
 
-#info-name em {
+.info-name em {
     color: #4c4c4c;
 }
 
@@ -98,7 +98,7 @@ body, #wrapper {
     color: #4c4c4c;
 }
 
-#skills {
+.skills {
     display: flex;
 }
 
@@ -118,17 +118,17 @@ body, #wrapper {
     background: transparent
 }
 
-#description {
+.description {
     margin-top: 42px;
 }
 
-#description p {
+.description p {
     color: #4c4c4c;
     margin-top: 12px;
     font-weight: 300;
 }
 
-#social-media {
+.social-media {
     grid-area: social;
     display: flex;
     justify-content: space-evenly;
@@ -136,25 +136,25 @@ body, #wrapper {
     background: #0fa36b;
 }
 
-#social-media a {
+.social-media a {
     color: white;
     text-decoration: none;
 }
 
-#social-media a:hover {
+.social-media a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    #container {
+    .container {
         width: 100%;
         height: 100%;
         padding: 0;
         margin: 0;
     }
     
-    #main-content {
+    .main-content {
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -166,7 +166,7 @@ body, #wrapper {
         border-radius: 4px 4px 0 0;
     }
 
-    #image {
+    .image {
         padding: 0;
         margin: 0;
         border-radius: 4px 4px 0 0;
@@ -174,12 +174,12 @@ body, #wrapper {
         max-height: 400px;
     }
 
-    #image img {
+    .image img {
         transform: translateY(-50px);
         border-radius: 4px 4px 0 0;
     }
 
-    #info {
+    .info {
         padding: 10px 30px;
         margin: 0;
     }
@@ -188,7 +188,7 @@ body, #wrapper {
         grid-template-columns: 1.5fr 1fr;
     }
 
-    #skills {
+    .skills {
         margin-top: 15px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -204,17 +204,17 @@ body, #wrapper {
         padding: 10px 20px;
     }
 
-    #description {
+    .description {
         margin-bottom: 15px;
     }
 
-    #social-media {
+    .social-media {
         display: flex;
         flex-direction: column;
         padding: 15px;
     }
 
-    #social-media a {
+    .social-media a {
         margin: 15px 0;
     }
 }

@@ -1,0 +1,88 @@
+.wrapper {
+	margin: 0 auto;
+  padding: 45px;
+  max-width: 1280px;
+}
+
+.main-header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent);
+}
+
+.main-header-container {
+	display: flex;
+	width: 100%;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.main-header-title {
+	font-size: 20px;
+	color: var(--text-primary);
+  user-select: none;
+}
+
+.main-header-title::before {
+  content: '<';
+  color: var(--primary);
+  margin-right: 5px;
+}
+
+.main-header-title::after {
+  content: '/>';
+  color: var(--primary);
+  margin-left: 5px;
+}
+
+.main-header-link {
+  color: var(--text-secondary);
+  transition: color 200ms ease-out;
+}
+
+.main-header-link:hover {
+  color: var(--text-primary);
+}
+
+.main-header-link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.presentation {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.presentation-info {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.presentation-info span {
+  color: var(--primary);
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.presentation-info button {
+  padding: 10px 15px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid var(--primary);
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.presentation-info button:hover {
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+}

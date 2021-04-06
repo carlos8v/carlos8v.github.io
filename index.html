@@ -1,55 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio Carlos</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="./script.js"></script>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Portifólio Carlos</title>
+	<link rel="stylesheet" href="public/styles/main.css" />
+	<link rel="stylesheet" href="public/styles/home.css" />
+	<script defer type="module" src="public/js/index.js"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="background"></div>
-        <div class="container">
-            <main class="main-content">
-                <div class="image">
-                    <img src="images/profile.jpeg" alt="foto de perfil de Carlos" />
-                </div>
-                <div class="info">
-                    <div class="info-name">
-                        <p>Olá, sou <strong>Carlos Vinicius Freitas de Souza</strong></p>
-                        <em>Desenvolvedor FullStack Jr</em>
-                    </div>
-                    <div class="info-block">
-                        <strong>Nacionalidade:</strong>
-                        <p>Brasileiro</p>
-                    </div>
-                    <div class="info-block">
-                        <strong>Localidade:</strong>
-                        <p>Macapá - AP</p>
-                    </div>
-                    <div class="info-block">
-                        <strong>Idade:</strong>
-                        <p></p>
-                    </div>
-                    <div class="skills">
-                        <p class="skills-items">HTML</p>
-                        <p class="skills-items">CSS</p>
-                        <p class="skills-items">Javascript</p>
-                        <p class="skills-items skills-items-important">Vontade de Aprender!</p>
-                    </div>
-                    <div class="description">
-                        <strong>Sobre mim:</strong>
-                        <p>Apaixonado por Tecnologia e WebDesign. Estudante da TRYBE ávido por começar a desenvolver aplicações voltadas à expansão da sociedade de programação brasileira.</p>
-                    </div>
-                </div>
-                <div class="social-media">
-                    <a href="https://github.com/carlos8v">Github</a>
-                    <a href="https://www.linkedin.com/in/carlos8v/">Linkedin</a>
-                    <a href="https://diolinux.com.br/" target="_blank">Blog de Inspiração</a>
-                </div>
-            </main>
-        </div>
-    </div>
+	<header class="main-header">
+		<div class="main-header-container wrapper">
+			<h1 class="main-header-title">Carlos Souza</h1>
+			<div class="main-header-links">
+				<a class="main-header-link" href="#">Sobre</a>
+				<a class="main-header-link" href="#">Skills</a>
+				<a class="main-header-link" href="#">Portifólio</a>
+				<a class="main-header-link" href="#">Contato</a>
+			</div>
+		</div>
+	</header>
+	<main class="main-section">
+		<section class="presentation wrapper">
+			<div class="presentation-info">
+				<span>Desenvolvedor FullStack Jr</span>
+				<h1>Carlos Souza</h1>
+				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae distinctio cumque odio quas, delectus ipsam corrupti possimus adipisci, ab totam non, perspiciatis quidem perferendis atque temporibus. Dicta qui maxime necessitatibus?</p>
+				<button>Baixar Currículo</button>
+			</div>
+			<div class="presentation-img">
+				<img src="https://picsum.photos/300">
+			</div>
+		</section>
+	</main>
+	<footer></footer>
 </body>
 </html>

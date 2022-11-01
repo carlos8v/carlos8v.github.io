@@ -1,0 +1,16 @@
+{
+  "name": "@carlos8v/portifolio",
+  "type": "module",
+  "version": "0.2.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^1.0.0",
+    "astro": "^1.6.0"
+  }
+}

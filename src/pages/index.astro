@@ -1,0 +1,61 @@
+---
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
+import { Code } from 'astro/components'
+
+import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
+import SkillCard from '../components/SkillCard.astro'
+import ProjectCard from '../components/ProjectCard.astro'
+import Footer from '../components/Footer.astro'
+
+import skills from '../data/skills.js'
+import projects from '../data/projects.js'
+
+const about = `export default {
+  name: 'Carlos Vinicius Freitas de Souza',
+  from: 'Macapá, AP, Brazil',
+  profession: 'JS Fullstack Developer',
+  email: 'carlos.pessoal@hotmail.com',
+  linkedin: 'https://www.linkedin.com/in/carlos8v/',
+  bio: [
+    'Apaixonado por Tecnologia e WebDesign',
+    'Alumni da escola de programação Trybe',
+    'Graduando em Ciência da Computação na UNIFAP'
+  ]
+}`
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+      <section>
+        <h1>🧑‍🚀 Olá, mundo!</h1>
+        <p>
+          Bem-vindo ao meu portifólio virtual, onde posso mostrar todos os meus trabalhado relacionados à desenvolvimento web e UI/UX design.</p>
+        <a target="_blank" class="resume-button" href="https://drive.google.com/file/d/1ceaSKpUBIybctz0i3IPLU7PbE9vvYw4A/view?usp=sharing">Baixar Currículo</a>
+      </section>
+      <section>
+        <h4 id="about">Sobre:</h4>
+        <Code lang="js" code={about} />
+      </section>
+      <section>
+        <h4 id="skills">Competências:</h4> 
+        <div class="skills-list">
+          {skills.map((props) => (<SkillCard {...props} />))}
+        </div>
+      </section>
+      <section>
+        <h4 id="projects">Projetos:</h4>
+        <div class="project-list">
+          {projects.map((project) => (<ProjectCard {...project} />))}
+        </div>
+      </section>
+		</main>
+		<Footer />
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="24"
+   height="24"
+   viewBox="0 0 6.3499999 6.35"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="bitmap.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="px"
+     showgrid="false" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <title
+       id="title132">GitHub</title>
+    <path
+       d="M 0,0.4548187 C 0,0.2035968 0.2087563,0 0.4663283,0 h 5.4173435 c 0.2575719,0 0.4663281,0.2035968 0.4663281,0.4548187 v 5.4403625 c 0,0.2512219 -0.2087562,0.4548187 -0.4663281,0.4548187 H 0.4663283 C 0.2087563,6.3499999 0,6.1464031 0,5.8951812 Z M 1.9617531,5.3157436 V 2.4483219 H 1.0088563 V 5.3157436 Z M 1.4855032,2.0566062 c 0.3321843,0 0.5389562,-0.2198687 0.5389562,-0.4953 -0.00596,-0.2813844 -0.2063751,-0.4953 -0.5326062,-0.4953 -0.3262313,0 -0.5393532,0.2143125 -0.5393532,0.4953 0,0.2754313 0.206772,0.4953 0.5266531,0.4953 z M 3.4333656,5.3157436 V 3.7143531 c 0,-0.085725 0.00635,-0.17145 0.031751,-0.2325687 0.068659,-0.1710533 0.2254249,-0.3484563 0.4889499,-0.3484563 0.3448843,0 0.4826001,0.2627313 0.4826001,0.6484938 V 5.3157436 H 5.3895624 V 3.6710937 c 0,-0.8810625 -0.4698999,-1.2906375 -1.0969625,-1.2906375 -0.5056188,0 -0.7322343,0.2778126 -0.8592343,0.4734718 v 0.00992 h -0.00634 l 0.00634,-0.00992 V 2.4483219 h -0.9525 c 0.01191,0.2690812 0,2.8674217 0,2.8674217 z"
+       id="path2362"
+       style="fill:#ffffff;stroke-width:0.396874" />
+  </g>
+</svg>

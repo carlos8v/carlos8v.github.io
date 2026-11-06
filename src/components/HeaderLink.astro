@@ -1,9 +1,15 @@
 ---
-export interface Props extends astroHTML.JSX.AnchorHTMLAttributes {}
+const { href, icon, text, active = false } = Astro.props;
 
-const { href, ...props } = Astro.props;
+const baseClass = "w-28 py-2 flex items-center gap-2 justify-center text-md font-medium rounded-3xl";
+
+const activeClass = `${baseClass} bg-white text-black`;
+const inactiveClass = `${baseClass} text-zinc-400 hover:text-white transition duration-400`;
+
+const classname = active ? activeClass : inactiveClass;
 ---
 
-<a href={href} class="cursor-pointer text-zinc-400 transition mr-4 hover:text-blue-500 hover:underline" {...props}>
+<a class={classname} href={href}>
 	<slot />
+	{text}
 </a>

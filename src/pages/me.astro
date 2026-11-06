@@ -1,5 +1,4 @@
 ---
-import '../styles/main.css'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 import { Code } from 'astro/components'
 
@@ -31,28 +30,28 @@ const about = `export default {
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-zinc-950 text-white text-left mx-auto px-5 py-8 md:max-w-2xl md:p-12">
-		<Header title={SITE_TITLE} />
-		<main>
+	<body class="bg-zinc-950 text-white flex flex-col items-center">
+		<Header />
+		<main class="mt-4 w-full px-5 py-8 md:max-w-2xl md:p-12">
       <section class="mb-8">
-        <h1 class="text-2xl mb-4">🧑‍🚀 Olá, mundo!</h1>
-        <p class="mb-4">
+        <h1 class="text-3xl font-bold mb-4">🧑‍🚀 Olá, mundo!</h1>
+        <p class="mb-4 text-lg">
           Bem-vindo ao meu portifólio virtual, onde posso mostrar todos os meus trabalhado relacionados a desenvolvimento web e UI/UX design.</p>
-        <a target="_blank" class="inline-block border border-blue-500 p-2 text-sm uppercase text-center text-blue-500 bg-transparent transition duration-300 hover:text-white hover:border-white" href="https://drive.google.com/file/d/1ceaSKpUBIybctz0i3IPLU7PbE9vvYw4A/view?usp=sharing">Baixar Currículo</a>
+        <a target="_blank" class="inline-block px-4 py-2 rounded font-bold bg-zinc-200 text-center text-zinc-950 transition duration-300 hover:bg-white" href="https://drive.google.com/file/d/1ceaSKpUBIybctz0i3IPLU7PbE9vvYw4A/view?usp=sharing">Baixar currículo</a>
       </section>
-      <section class="mb-8">
-        <h4 id="about" class="mb-4 font-bold">Sobre:</h4>
+      <section class="my-12">
+        <h4 id="about" class="text-xl mb-8 font-bold">Sobre:</h4>
         <Code lang="js" code={about} class="p-4 rounded"/>
       </section>
-      <section class="mb-8">
-        <h4 id="skills" class="mb-4 font-bold">Competências:</h4> 
-        <div class="skills-list">
+      <section class="my-12">
+        <h4 id="skills" class="text-xl mb-8 font-bold">Competências:</h4> 
+        <div class="flex justify-center w-full max-w-xl gap-12 flex-wrap">
           {skills.map((props) => (<SkillCard {...props} />))}
         </div>
       </section>
-      <section>
-        <h4 id="projects" class="mb-4 font-bold">Projetos:</h4>
-        <div class="project-list">
+      <section class="my-12">
+        <h4 id="projects" class="text-xl mb-8 font-bold">Projetos:</h4>
+        <div>
           {projects.map((project) => (<ProjectCard {...project} />))}
         </div>
       </section>

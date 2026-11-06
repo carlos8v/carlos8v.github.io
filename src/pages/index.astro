@@ -1,21 +1,18 @@
 ---
-import '../styles/main.css'
 import { SITE_TITLE, SITE_DESCRIPTION } from '../config'
 import BaseHead from '../components/BaseHead.astro'
+import Header from '../components/Header.astro'
 
 const links = [
 	{
-		title: 'Portifólio',
-		link: '/me',
-		external: false,
-	},
-	{
 		title: 'Github',
+		icon: '/github.svg',
 		link: 'https://github.com/carlos8v',
 		external: true,
 	},
 	{
 		title: 'Linkedin',
+		icon: '/linkedin.svg',
 		link: 'https://linkedin.com/in/carlos8v',
 		external: true,
 	}
@@ -27,20 +24,20 @@ const links = [
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body class="bg-zinc-950 text-white min-h-full min-h-screen flex flex-col justify-center items-center">
-		<section class="mb-8 w-full max-w-2xl">
-			<img src="https://avatars.githubusercontent.com/u/53836455?v=4" width="128" height="128" class="rounded-full w-32 mb-4 mx-auto" />
-			<p class="text-center">
-				<span class="font-medium">Carlos Souza</span><br />
-				<span class="font-thin">FullStack Developer</span>
-			</p>
+	<body class="bg-zinc-950 text-white flex flex-col items-center">
+		<Header />
+		<section class="mt-14 mb-4 px-4 w-full max-w-2xl">
+			<img src="https://avatars.githubusercontent.com/u/53836455?v=4" width="112" height="112" class="rounded-full w-28 mb-4" />
+			<h1 class="text-4xl font-bold mt-6 mb-4">Olá, sou Carlos Souza 👋</h1>
+			<h1 class="text-lg my-2">🔭 Desenvolvedor Fullstack</h1>
+			<h1 class="text-lg my-2">⚡ Criando apps usando tecnologias como React.js e Node.js</h1>
+			<h1 class="text-lg my-2">🎯 Entusiasta de projetos para web e hardware dedicado</h1>
 		</section>
-		<section class="w-full max-w-md px-5">
-			{links.map(({ link, title, external }) => (
-				<a href={link} class="w-full block text-center border border-white group mb-6" target={external ? '_blank' : undefined}>
-					<div class="w-full block px-4 py-2 w-full bg-white text-black group-hover:-translate-y-[10px] group-hover:-translate-x-[8px] group-hover transition ease-out">
-						{title}
-					</div>
+		<section class="px-4 w-full max-w-2xl flex flex-start gap-2">
+			{links.map(({ link, title, icon, external }) => (
+				<a href={link} class="w-32 flex justify-center items-center gap-2 border border-zinc-800 rounded-3xl px-4 py-2 font-medium bg-transparent hover:bg-zinc-900 transition" target={external ? '_blank' : undefined}>
+					{icon ? <img src={icon} class="w-5" /> : null}
+					{title}
 				</a>
 			))}
 		</section>
